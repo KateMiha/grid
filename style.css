@@ -1,0 +1,252 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h3{
+    text-align: center;
+}
+
+.header{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase ;
+}
+
+.header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row-1-header{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 40vw;
+    background-image:
+    linear-gradient(
+            to bottom,
+            rgba(0,0,0, 0.3) 0%,
+            rgba(0,0,0, 0.3) 100%
+    ),
+    linear-gradient(
+            to bottom,
+            rgba(255,255,255, 0.3) 0%,
+            rgba(255,255,255, 0.3) 100%
+    ),
+    url("../image/ground.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.image1{
+    position: absolute;
+    margin-left: 16.5vw;
+    margin-top: 9.5vw;
+    -webkit-filter: drop-shadow( 3px 3px 5px black);
+    filter: alpha(Opacity=85);
+    opacity: 0.85;
+}
+
+.image2{
+    position: absolute;
+    margin-left: 14vw;
+    margin-top: 10.5vw;
+    -webkit-filter: drop-shadow( 8px 8px 20px black);
+    filter: alpha(Opacity=95);
+    opacity: 0.95;
+}
+
+.slog{
+
+    color: white;
+    padding-top: 12.5vw;
+    text-shadow: black 3px 3px 5px;
+}
+
+.slog p{
+    text-align: center;
+    margin: 0.3vw 0 0.3vw 0;
+    font-size: 2vw;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Poiret One', cursive;
+}
+
+.slog h1{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    margin: 0.5vw 0 0.5vw 0;
+    font-size: 4vw;
+}
+
+.row-2-header {
+    background: rgba(64, 0, 59, 0.9);
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 4fr 1fr;
+    box-shadow:  #2f2f2f 0 0 10px;
+    margin-top: -50px;
+    padding: 0;
+}
+
+.header-admin{
+    margin-top: 0;
+}
+
+.row-2-header > div{
+    font-size: 14px;
+}
+
+.row-2-header a:hover{
+    text-shadow: white 0 5px 10px;
+}
+
+.logo{
+    text-align: center;
+    margin: 10px 16px 0 16px;
+ }
+
+.menu ul{
+    display: grid;
+    padding: 5px 0 0 0;
+    grid-template-columns: repeat(6,1fr);
+    font-family: 'Cousine', monospace;
+}
+
+.menu li{
+    display: inline;
+    font-size: 16px;
+}
+
+.menu li:before {
+    list-style: none;
+    content: none;
+}
+
+.menu li > a{
+    color: white;
+    text-decoration: none;
+ }
+
+.reg{
+    text-align: center;
+    margin: 16px;
+}
+
+.container-articles{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 1vw;
+    margin: 6px 2vw 3vw 2vw;
+}
+
+.content-articles{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1vw;
+    font-size: 18px;
+}
+
+.content-articles > div{
+    padding: 2vw;
+    background: white;
+    box-shadow:  #9d9d9d 0 0 15px;
+}
+
+.container-admin{
+    display: grid;
+    margin: 6px 2vw 3vw 2vw;
+}
+
+.content-admin{
+    font-size: 18px;
+    padding: 2vw;
+    background: white;
+    box-shadow:  #9d9d9d 0 0 15px;
+}
+
+.container-article{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 1vw;
+    margin: 6px 2vw 3vw 2vw;
+}
+
+.content-article{
+    font-size: 18px;
+    padding: 2vw;
+    background: white;
+    box-shadow:  #9d9d9d 0 0 15px;
+}
+
+.bar-left{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 1vw;
+    font-size: 18px;
+}
+
+.bar-left > div{
+    max-width: 15vw;
+    padding: 2vw;
+    background: white;
+    box-shadow:  #9d9d9d 0 0 10px;
+}
+
+.bar-left a, .bar-left li{
+    list-style: none;
+    color: black;
+    display: inline;
+    text-decoration: none;
+}
+
+.bar-left a:hover{
+    color: rgb(82, 24, 77);
+    text-shadow: black 5px 5px 10px;
+}
+
+.bar-left ul{
+    padding: 0;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    background: rgb(82, 24, 77);
+    font-size: 14px;
+    box-shadow: inset rgb(43, 17, 38) 0 0 15px;
+}
+
+.row-1-footer {
+    padding : 2vw 0;
+    display: grid;
+    width: 60vw;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.row-1-footer > div{
+    padding: 1vw;
+    text-align: center;
+    color: #dadada;
+    border-top: 1px solid rgb(65, 22, 60);
+}
+
+.row-1-footer > div li{
+    text-align: left;
+    margin-top: 0;
+    display: inline;
+}
+
+.row-1-footer > div ul{
+    padding: 0;
+}
+
+.row-2-footer {
+    text-align: center;
+    padding: 1vw;
+    color: #dadada;
+    border-top: 1px solid rgb(65, 22, 60);
+}

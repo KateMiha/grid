@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Admin Panel"
+AuthUserFile C:\Users\Lenko\Desktop\OSPanel\domains\grid\admin\.htpasswd
+Require valid-user
